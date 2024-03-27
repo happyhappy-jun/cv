@@ -20,6 +20,7 @@
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \usepackage{tabularx} % in the preamble
+\usepackage{makecell}
 \input{glyphtounicode}
 
 
@@ -89,11 +90,12 @@
 }
 
 
-\newcommand{\resumeEducationHeading}[4]{
+\newcommand{\resumeEducationHeading}[5]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+      \textit{} & \textit{\small #5} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -161,13 +163,15 @@
 \resumeEducationHeading
 {Pohang University of Science and Technology
 }{Pohang, Korea}
-{B.S. in Computer Science (GPA: 3.6/4.3, Major GPA: 3.8)}{Feb 2019 \textbf{--} Present}
+{B.S. in Computer Science (GPA: 3.6, Major GPA: 3.8)}{Feb 2019 \textbf{--} Present}
+{Including 2 year military service}
 
 \resumeEducationHeading
 {McLean High School}
 {Virginia, USA}
 {}
 {Sep 2015 \textbf{--} Jun 2018}
+{}
 
 \resumeSubHeadingListEnd
 
@@ -214,13 +218,21 @@
 \vspace{3pt}
 \resumeSubHeadingListStart
 \resumeSubheading
+{Finding the optimal dynamic granularity for RAG framework}
+{DI Lab}
+{Advisor: \href{https://sites.google.com/view/postechdi/member/faculty}{Hwanjo Yu}}
+{Feb 2024 \textbf{--} Present, Internship}
+\resumeItemListStart
+\resumeItem{Researching a new RAG framework to improve retrieval granularity in RAG framework by end-to-end training of 'segmentor'}
+\resumeItemListEnd
+
+\resumeSubheading
 {Method for Enhancing retrieval-augmented generation by prompting model}
 {DI Lab}
 {Advisor: \href{https://sites.google.com/view/postechdi/member/faculty}{Hwanjo Yu}}
-{Sep 2023 \textbf{--} Present, Internship}
+{Sep 2023 \textbf{--} Jan 2024, Internship}
 \resumeItemListStart
 \resumeItem{Researching a new RAG framework, which inserts a prompting model between a retriever model and a generator model to improve the RAG framework in a black-box frozen generator environment.}
-\resumeItem{Preparing for the paper submission as a first author to top-tier conferences during 2024.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -273,8 +285,19 @@
 \vspace{2pt}
 \resumeSubHeadingListStart
 \small{\item{
-	            \textbf{1st Place Award in the Postech Open Innovation Big Data Challenge} \\ \vspace{3pt}
-	      }}
+              \textbf{Award: 1st Place Award in the Postech Open Innovation Big Data Challenge} \\ \vspace{3pt}
+        }}
+\small{
+  \item{
+    \textbf{Award: Excellence Award of Undergraduate Research Program (UGRP) @POSTECH 2021}
+  }
+}
+\small{\item{
+  \textbf{Scholarship: Global Leadership Program @POSTECH CSE 2020} 
+}}
+\small{\item{
+  \textbf{Scholarship: Jigok Scholarship @POSTECH 2019-2024}
+}}
 \resumeSubHeadingListEnd
 
 %----------- PROJECTS -----------
@@ -286,7 +309,7 @@
 \resumeProjectHeading
 {\textbf{Deep Learning (CSED538) In-class Image Classification Competition} $|$ \emph{\href{https://github.com/happyhappy-jun/CSED538-final-project}{Github}}}
 \resumeItemListStart
-\resumeItem{Developed an image classification framework based on ViT and RandAugment}
+  \resumeItem{Developed an image classification framework based on ViT and RandAugment}
 \resumeItem{Achieved first place in the competition}
 \resumeItemListEnd
 
@@ -295,6 +318,7 @@
 \resumeItemListStart
 \resumeItem{Lead the model development process of vision model that classify a person's MBTI with vision models}
 \resumeItem{Deployed a web application to serve our model in a web environment.}
+\resumeItem{Received the Excellence Award of Undergraduate Research Program (UGRP)}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -305,7 +329,6 @@
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%----------- RELEVANT COURSEWORK -----------
 
 %----------- RELEVANT COURSEWORK -----------
 
@@ -313,25 +336,25 @@
 \vspace{3pt}
 \resumeSubHeadingListStart
 \small{\item{
-	            \textbf{Major coursework:}{
-		            Deep Learing (CSED538),
-		            Deep Learning NLP (CSED554),
-		            Implem. \& Accel. for Machine Learning (CSED510),
-		            Software Design Methods (CSED332),
-		            Artificial Intelligence (CSED342),
-		            Data Analysis Using Tools (CSED490A),
-		            Operating Systems (CSED312),
-		            Computer Architecture (CSED311),
-		            Automata \& Formal Languages (CSED341),
-		            Algorithm (CSED331),
-		            Object Oriented Programming (CSED232),
-		            Data Structure (CSED233),
-		            Discrete Math (CSED261),
-		            Digital Sys. Design (CSED273),
-		            Intro. to Computer SW Systems (CSED211),
-		            Applied Linear Algebra (MATH203),
-	            }
-	      }}
+              \textbf{Major coursework:}{
+                Deep Learing (CSED538),
+                Deep Learning NLP (CSED554),
+                Implem. \& Accel. for Machine Learning (CSED510),
+                Software Design Methods (CSED332),
+                Artificial Intelligence (CSED342),
+                Data Analysis Using Tools (CSED490A),
+                Operating Systems (CSED312),
+                Computer Architecture (CSED311),
+                Automata \& Formal Languages (CSED341),
+                Algorithm (CSED331),
+                Object Oriented Programming (CSED232),
+                Data Structure (CSED233),
+                Discrete Mathmatics (CSED261),
+                Digital Sys. Design (CSED273),
+                Intro. to Computer SW Systems (CSED211),
+                Applied Linear Algebra (MATH203),
+              }
+        }}
 \resumeSubHeadingListEnd
 
 %----------- CERTIFICATES -----------
@@ -364,7 +387,8 @@
 \vspace{3pt}
 \resumeSubHeadingListStart
 \small{
-	\item {TOEFL: 105/120 (2019)}
+  \item {TOEFL: 105/120 (2019)}
+  \item {TOEIC: 965/990 (2024)}
 }
 \resumeSubHeadingListEnd
 
